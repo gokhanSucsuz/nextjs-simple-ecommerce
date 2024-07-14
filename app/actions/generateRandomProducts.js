@@ -63,7 +63,7 @@ class GenerateRandomProducts {
 		return mappedCategories;
 	}
 
-	getProductsByCategoryId(slice = 3) {
+	getProductsByCategoryId() {
 		return this.memData.filter(
 			(product) => product.category.categoryId === categoryId
 		);
@@ -73,7 +73,7 @@ class GenerateRandomProducts {
 			.sort((a, b) => new Date(b.date) - new Date(a.date))
 			.slice(0, slice);
 	}
-	getWeeklyProducts(slice = 3) {
+	getWeeklyProducts() {
 		return this.memData.filter((p) => p.weeklyProduct === 1);
 	}
 	getDiscountProducts(slice) {

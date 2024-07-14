@@ -13,7 +13,7 @@ export default function Home({ params }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <ProductSection href={`/${params.countryCode}/sections/latest-product`} title="Latest Products" />
+      <ProductSection href={`/${params.countryCode}/sections/latest-products`} title="Latest Products" />
       <div className="grid grid-cols-3 gap-4">
         {
           latestProduct.map((item) => {
@@ -23,7 +23,7 @@ export default function Home({ params }) {
           })
         }
       </div>
-      <ProductSection href={`/${params.countryCode}/sections/weekly-product`} title="Weekly Products" className="mt-40" />
+      <ProductSection href={`/${params.countryCode}/sections/weekly-products`} title="Weekly Products" className="mt-40" />
       <div className="grid grid-cols-3 gap-4">
         {
           weeklyProduct.map((item) => {
@@ -33,7 +33,7 @@ export default function Home({ params }) {
           })
         }
       </div>
-      <ProductSection href={`/${params.countryCode}/sections/discount-product`} title="Discount Products" className="mt-40" />
+      <ProductSection href={`/${params.countryCode}/sections/discount-products`} title="Discount Products" className="mt-40" />
       <div className="grid grid-cols-3 gap-4">
         {
           discount.map((item) => {
