@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Container = () => {
+const Container = (props) => {
     return (
-        <div>
-
+        <div className='container mx-auto max-w-screen-xl min-h-screen pt-16 pb-16'>
+            {
+                props.children
+            }
         </div>
     )
 }
