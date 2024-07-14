@@ -12,7 +12,7 @@ const FooterProductSection = (props) => {
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4 flex flex-col gap-2">
                     {
-                        allProducts..map((item) =>
+                        allProducts.map((item) =>
                             <Link key={item.productId} href={`/${props.countryCode}/products/${item.productId}`} className="hover:underline">
                                 {
                                     item.productName
