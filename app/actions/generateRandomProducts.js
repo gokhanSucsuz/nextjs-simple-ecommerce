@@ -94,6 +94,9 @@ class GenerateRandomProducts {
 	sortDesc(d) {
 		return d.slice().sort((a, b) => b.price - a.price);
 	}
+	getAllProducts() {
+		return this.memData;
+	}
 }
 
 export default new GenerateRandomProducts();
