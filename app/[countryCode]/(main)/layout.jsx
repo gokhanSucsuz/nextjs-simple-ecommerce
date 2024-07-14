@@ -7,11 +7,11 @@ import React from 'react'
 const PageLayout = (props) => {
     return (
         <div>
-            <Header />
+            <Header {...props.params} />
             <Container>
                 {props.children}
             </Container>
-            <Footer />
+            <Footer {...props.params} />
         </div>
     )
 }
