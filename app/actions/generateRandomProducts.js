@@ -63,7 +63,7 @@ class GenerateRandomProducts {
 		return mappedCategories;
 	}
 
-	getProductsByCategoryId() {
+	getProductsByCategoryId(categoryId) {
 		return this.memData.filter(
 			(product) => product.category.categoryId === categoryId
 		);
@@ -81,7 +81,9 @@ class GenerateRandomProducts {
 	}
 
 	getProductById(id) {
-		return this.memData.find((item) => item.id === id);
+		return this.memData.find(
+			(item) => item.productId.toString() === id.toString()
+		);
 	}
 	searchData(q) {
 		return this.memData.filter((item) =>

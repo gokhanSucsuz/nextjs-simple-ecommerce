@@ -3,9 +3,7 @@ import React from 'react'
 import generateRandomProducts from '../actions/generateRandomProducts'
 
 const FooterProductSection = (props) => {
-    console.log(props.countryCode)
     const allProducts = generateRandomProducts.getAllProducts()
-    console.log(allProducts)
     return (
         <div>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Products</h2>

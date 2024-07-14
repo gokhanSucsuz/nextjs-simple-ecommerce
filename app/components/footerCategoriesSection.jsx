@@ -3,7 +3,6 @@ import React from 'react'
 import generateRandomProducts from '../actions/generateRandomProducts'
 
 const FooterCategoriesSection = (props) => {
-    console.log(props.countryCode)
     const categories = generateRandomProducts.getCategories()
     return (
         <div>

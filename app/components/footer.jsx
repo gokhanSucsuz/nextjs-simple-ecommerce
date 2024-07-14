@@ -6,7 +6,6 @@ import FooterProductSection from './footerProductSection'
 import FooterCompanySection from './footerCompanySection'
 
 const Footer = (props) => {
-    console.log(props)
     return (
         <footer className="bg-slate-200 dark:bg-gray-900 mt-10">
             <div className="mx-auto w-full max-w-screen-xl">

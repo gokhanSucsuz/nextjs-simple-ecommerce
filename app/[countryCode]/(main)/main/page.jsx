@@ -2,7 +2,6 @@ import GenerateRandomProducts from "@/app/actions/generateRandomProducts";
 import ProductCard from "@/app/components/productCard";
 import ProductSection from "@/app/components/productSection";
 import { getLocale } from "@/app/locales/getLocales";
-import Image from "next/image";
 
 export default function Home({ params }) {
   const locales = getLocale(params.countryCode)
@@ -10,6 +9,7 @@ export default function Home({ params }) {
   const latestProduct = GenerateRandomProducts.getLatestProducts()
   const weeklyProduct = GenerateRandomProducts.getWeeklyProducts()
   const discount = GenerateRandomProducts.getDiscountProducts()
+  console.log(latestProduct)
 
   return (
     <div className="flex flex-col gap-4">
