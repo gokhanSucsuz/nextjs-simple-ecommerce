@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import FooterPrivacySection from './footerPrivacySection'
+import FooterPrivacyPolicySection from './footerPrivacyPolicySection'
 import FooterCategoriesSection from './footerCategoriesSection'
 import FooterProductSection from './footerProductSection'
 import FooterCompanySection from './footerCompanySection'
@@ -13,7 +13,7 @@ const Footer = (props) => {
                 <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
 
                     <FooterCompanySection {...props} />
-                    <FooterPrivacySection {...props} />
+                    <FooterPrivacyPolicySection {...props} />
                     <FooterCategoriesSection {...props} />
                     <FooterProductSection {...props} />
                 </div>
