@@ -1,8 +1,10 @@
+import generateRandomProducts from "@/app/actions/generateRandomProducts";
 import { getLocale } from "@/app/locales/getLocales";
 import Image from "next/image";
 
 export default function Home({ params }) {
   const locales = getLocale(params.countryCode)
+  console.log(generateRandomProducts.memData)
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
