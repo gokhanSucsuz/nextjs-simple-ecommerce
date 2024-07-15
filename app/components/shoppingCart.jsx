@@ -55,7 +55,7 @@ const ShoppingCart = (props) => {
         handleGroup(basket)
     }, [basket])
     return (
-        <div className='relative'>
+        <div className='relative z-10'>
             <button
                 onClick={toggleMenu}
                 id="dropdownUserAvatarButton"
