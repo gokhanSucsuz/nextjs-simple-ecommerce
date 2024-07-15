@@ -10,7 +10,7 @@ const CategoryDetail = ({ params }) => {
                 {
                     products.map((item) => {
                         return (
-                            <ProductCard locale={params.countryCode} product={item} />
+                            <ProductCard key={item} locale={params.countryCode} product={item} />
                         )
                     })
                 }

@@ -56,7 +56,7 @@ const SignIn = ({ params }) => {
                                 <button type="submit" className="w-full px-5 py-3 text-base font-medium text-center text-white bg-slate-700 rounded-lg hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 sm:w-auto dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800">
                                     Login</button>
                                 <div className="text-sm font-medium text-gray-900 dark:text-white">
-                                    Don't have you an account?
+                                    Do not have you an account?
                                     <Link href={`/${params.countryCode}/signup`} className="text-slate-600 hover:underline dark:text-slate-500 ps-2">
                                         Register</Link>
                                 </div>

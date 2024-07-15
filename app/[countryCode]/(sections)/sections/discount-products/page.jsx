@@ -21,7 +21,7 @@ const DiscountProducts = ({ params, searchParams }) => {
                         {
                               discountProductsAll.map((item) => {
                                     return (
-                                          <ProductCard product={item} locale={params.countryCode} />
+                                          <ProductCard key={item} product={item} locale={params.countryCode} />
                                     )
                               })
                         }

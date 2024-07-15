@@ -4,6 +4,7 @@ import { useBasketStore } from '../store/basketStore'
 import { useRouter } from 'next/router'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const ShoppingCart = (props) => {
     const { basket } = useBasketStore()
@@ -78,7 +79,7 @@ const ShoppingCart = (props) => {
                                     <li key={item.productId} className='pb-3 hover:bg-slate-100 cursor-pointer'>
                                         <div className="flex items-center space-x-4 px-4">
                                             <div className="flex-shrink-0">
-                                                <img src={item.image} alt={item.productName} className="w-8 h-8 rounded-full" />
+                                                <Image src={item.image} alt={item.productName} width="100" height="100" className="w-8 h-8 rounded-full" />
                                             </div>
                                             <div className="max-w-[200px]">
                                                 <p className="text-sm font-medium truncate">

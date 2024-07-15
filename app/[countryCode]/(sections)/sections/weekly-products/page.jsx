@@ -21,7 +21,7 @@ const WeeklyProducts = ({ params, searchParams }) => {
                 {
                     weeklyProductsAll.map((item) => {
                         return (
-                            <ProductCard product={item} locale={params.countryCode} />
+                            <ProductCard key={item} product={item} locale={params.countryCode} />
                         )
                     })
                 }
