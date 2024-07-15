@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import LocaleSwitcher from './localeSwitcher'
 import ShoppingCart from './shoppingCart'
 import { useAuthStore } from '../store/authStore'
@@ -11,6 +11,7 @@ const Header = (props) => {
     const { user } = useAuthStore()
     const [searchText, setSearchText] = useState("")
     const router = useRouter()
+
     return (
 
         <header>
