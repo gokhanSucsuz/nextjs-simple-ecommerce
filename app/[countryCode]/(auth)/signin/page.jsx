@@ -1,8 +1,24 @@
-import { createUser } from '@/app/actions/actions'
+"use client"
+import { onLogin } from '@/app/actions/actions'
+import { useAuthStore } from '@/app/store/authStore'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const SignIn = ({ params }) => {
+    const router = useRouter()
+    const { updateJwt, updateUser } = useAuthStore()
+    const handleForm = async (e) => {
+        e.preventDefault()
+        const fd = new FormData(e.target)
+        const response = await onLogin(fd);
+        if (response) {
+            updateJwt(response.jwt)
+            updateUser(response.user)
+            router.push(`/${params.countryCode}/main`)
+            console.log("Response=> ", response)
+        }
+    }
     return (
         <div>
             <section className="bg-gray-50 rounded-lg shadow-lg dark:bg-gray-900">
@@ -18,7 +34,7 @@ const SignIn = ({ params }) => {
                             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                                 Sign in
                             </h2>
-                            <form className="mt-8 space-y-6" action={createUser}>
+                            <form className="mt-8 space-y-6" onSubmit={handleForm}>
                                 <div>
                                     <input
                                         defaultValue={params.countryCode}
