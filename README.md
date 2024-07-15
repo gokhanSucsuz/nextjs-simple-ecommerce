@@ -1,3 +1,13 @@
+demo username: admin@admin.com
+demo password: admin123
+
+demo link is here => https://nextjs-simple-ecommerce.vercel.app/
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
