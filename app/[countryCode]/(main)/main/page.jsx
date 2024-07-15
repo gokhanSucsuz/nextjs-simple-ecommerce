@@ -9,7 +9,6 @@ export default function Home({ params }) {
   const latestProduct = GenerateRandomProducts.getLatestProducts()
   const weeklyProduct = GenerateRandomProducts.getWeeklyProducts()
   const discount = GenerateRandomProducts.getDiscountProducts()
-  console.log(latestProduct)
 
   return (
     <div className="flex flex-col gap-4">
